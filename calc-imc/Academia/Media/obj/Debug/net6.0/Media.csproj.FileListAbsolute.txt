@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\bin\Debug\net6.0\Media.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\bin\Debug\net6.0\Media.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\bin\Debug\net6.0\Media.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\bin\Debug\net6.0\Media.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\bin\Debug\net6.0\Media.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\refint\Media.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\Media.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Media\obj\Debug\net6.0\ref\Media.dll

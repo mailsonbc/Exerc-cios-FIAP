@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\bin\Debug\net6.0\SituacaoAluno.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\bin\Debug\net6.0\SituacaoAluno.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\bin\Debug\net6.0\SituacaoAluno.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\bin\Debug\net6.0\SituacaoAluno.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\bin\Debug\net6.0\SituacaoAluno.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\refint\SituacaoAluno.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\SituacaoAluno.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAluno\obj\Debug\net6.0\ref\SituacaoAluno.dll
