@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\bin\Debug\net6.0\SituacaoAlunoComFrequenciaENota.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\bin\Debug\net6.0\SituacaoAlunoComFrequenciaENota.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\bin\Debug\net6.0\SituacaoAlunoComFrequenciaENota.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\bin\Debug\net6.0\SituacaoAlunoComFrequenciaENota.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\bin\Debug\net6.0\SituacaoAlunoComFrequenciaENota.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\refint\SituacaoAlunoComFrequenciaENota.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\SituacaoAlunoComFrequenciaENota.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\SituacaoAlunoComFrequenciaENota\obj\Debug\net6.0\ref\SituacaoAlunoComFrequenciaENota.dll
