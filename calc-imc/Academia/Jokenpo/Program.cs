@@ -7,7 +7,7 @@ class Program
         int escolha_jogador, escolha_computador, pontos_jogador = 0, pontos_computador = 0;
         string continua = "", escolha_computador_string = "", escolha_jogador_string = "";
         bool jogador = false, computador = false;
-        var aletorio = new Random();        
+        var aleatorio = new Random();        
         
 
         while(continua != "n")
@@ -26,7 +26,7 @@ class Program
 
                 escolha_jogador = Convert.ToInt32(Console.ReadLine());
 
-                escolha_computador = aletorio.Next(1, 3);
+                escolha_computador = aleatorio.Next(1, 3);
 
                 switch (escolha_computador)
                 {
@@ -61,17 +61,20 @@ class Program
                     computador = true;
                     jogador = false;
                     Console.WriteLine("Você perdeu!");
-                }else if(escolha_computador == 2 && escolha_jogador == 1)
+                }
+                else if(escolha_computador == 2 && escolha_jogador == 1)
                 {
                     computador = true;
                     jogador = false;
                     Console.WriteLine("Você perdeu!");
-                }else if(escolha_computador == 3 && escolha_jogador == 2)
+                }
+                else if(escolha_computador == 3 && escolha_jogador == 2)
                 {
                     computador = true;
                     jogador = false;
                     Console.WriteLine("Você perdeu!");
-                }else if (escolha_computador == 3 && escolha_jogador == 1)
+                }
+                else if (escolha_computador == 3 && escolha_jogador == 1)
                 {
 
                     jogador = true;
@@ -89,7 +92,8 @@ class Program
                     jogador = true;
                     computador = false;
                     Console.WriteLine("Você ganhou!");
-                }else if (escolha_computador == escolha_jogador)
+                }
+                else if (escolha_computador == escolha_jogador)
                 {
                     jogador = false;
                     computador = false;
@@ -99,7 +103,8 @@ class Program
                 if(computador)
                 {
                     pontos_computador++;
-                }else if (jogador)
+                }
+                else if (jogador)
                 {
                     pontos_jogador++;
                 }
@@ -118,7 +123,8 @@ class Program
             {
                 Console.WriteLine("Deseja continuar? Sim [ENTER], ou Não n ");
                 continua = Console.ReadLine();
-            }catch(Exception)
+            }
+            catch(Exception)
             {
                 Console.WriteLine("Escolha entre ENTER e n");
             }
