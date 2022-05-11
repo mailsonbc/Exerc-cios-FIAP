@@ -5,7 +5,7 @@ class Program
     public static void Main(string[] args)
     {
         int escolha_jogador, escolha_computador, pontos_jogador = 0, pontos_computador = 0;
-        string continua = "", escolha_computador_string = "", escolha_jogador_string = "";
+        string? continua = "", escolha_computador_string = "", escolha_jogador_string = "";
         bool jogador = false, computador = false;
         var aleatorio = new Random();        
         
@@ -26,7 +26,7 @@ class Program
 
                 escolha_jogador = Convert.ToInt32(Console.ReadLine());
 
-                escolha_computador = aleatorio.Next(1, 3);
+                escolha_computador = aleatorio.Next(1, 4);
 
                 switch (escolha_computador)
                 {
@@ -39,6 +39,9 @@ class Program
                     case 3:
                         escolha_computador_string = "Tesoura";
                         break ;
+                    default:
+                        Console.WriteLine("Escolha inválida!");
+                        break;
                 }
 
                 switch (escolha_jogador)
@@ -51,6 +54,9 @@ class Program
                         break;
                     case 3:
                         escolha_jogador_string = "Tesoura";
+                        break;
+                    default:
+                        Console.WriteLine("Escolha inválida!");
                         break;
                 }
 

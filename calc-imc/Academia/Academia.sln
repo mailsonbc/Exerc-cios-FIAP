@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Imc", "Imc\Imc.csproj", "{1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Media", "Media\Media.csproj", "{3BBF478A-9C38-4295-AA14-91A150343B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SituacaoAluno", "SituacaoAluno\SituacaoAluno.csproj", "{755F490F-13E2-4DF7-BBFC-FF2C9E0F32ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SituacaoAluno", "SituacaoAluno\SituacaoAluno.csproj", "{755F490F-13E2-4DF7-BBFC-FF2C9E0F32ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SituacaoAlunoComFrequenciaENota", "SituacaoAlunoComFrequenciaENota\SituacaoAlunoComFrequenciaENota.csproj", "{379AC53E-114D-485C-A674-BD190F372AA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SituacaoAlunoComFrequenciaENota", "SituacaoAlunoComFrequenciaENota\SituacaoAlunoComFrequenciaENota.csproj", "{379AC53E-114D-485C-A674-BD190F372AA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jokenpo", "Jokenpo\Jokenpo.csproj", "{5041362E-0634-4054-A60F-83E57269C06B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jokenpo", "Jokenpo\Jokenpo.csproj", "{5041362E-0634-4054-A60F-83E57269C06B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jokenpo02", "Jokenpo02\Jokenpo02.csproj", "{42BAB9C1-7318-42F0-A09C-CCDB303923BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5041362E-0634-4054-A60F-83E57269C06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5041362E-0634-4054-A60F-83E57269C06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5041362E-0634-4054-A60F-83E57269C06B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BAB9C1-7318-42F0-A09C-CCDB303923BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BAB9C1-7318-42F0-A09C-CCDB303923BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BAB9C1-7318-42F0-A09C-CCDB303923BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BAB9C1-7318-42F0-A09C-CCDB303923BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

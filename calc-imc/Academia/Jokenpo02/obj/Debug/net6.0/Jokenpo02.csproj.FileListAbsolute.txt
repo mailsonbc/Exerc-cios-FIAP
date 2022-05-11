@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\bin\Debug\net6.0\Jokenpo02.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\bin\Debug\net6.0\Jokenpo02.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\bin\Debug\net6.0\Jokenpo02.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\bin\Debug\net6.0\Jokenpo02.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\bin\Debug\net6.0\Jokenpo02.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\refint\Jokenpo02.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\Jokenpo02.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\Jokenpo02\obj\Debug\net6.0\ref\Jokenpo02.dll
