@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\bin\Debug\net6.0\RepeticaoComModulo.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\bin\Debug\net6.0\RepeticaoComModulo.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\bin\Debug\net6.0\RepeticaoComModulo.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\bin\Debug\net6.0\RepeticaoComModulo.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\bin\Debug\net6.0\RepeticaoComModulo.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\refint\RepeticaoComModulo.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\RepeticaoComModulo.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\RepeticaoComModulo\obj\Debug\net6.0\ref\RepeticaoComModulo.dll

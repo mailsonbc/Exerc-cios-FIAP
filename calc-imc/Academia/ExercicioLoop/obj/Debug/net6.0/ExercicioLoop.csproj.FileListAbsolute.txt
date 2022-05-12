@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\bin\Debug\net6.0\ExercicioLoop.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\bin\Debug\net6.0\ExercicioLoop.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\bin\Debug\net6.0\ExercicioLoop.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\bin\Debug\net6.0\ExercicioLoop.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\bin\Debug\net6.0\ExercicioLoop.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\refint\ExercicioLoop.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ExercicioLoop.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\ExercicioLoop\obj\Debug\net6.0\ref\ExercicioLoop.dll
