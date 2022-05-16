@@ -21,9 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeticaoComModulo", "Repet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tabuada", "Tabuada\Tabuada.csproj", "{91710231-2F65-410E-ACBD-BE068C84BD72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fatorial", "Fatorial\Fatorial.csproj", "{6B385CF0-F11B-4682-A3A3-3679E9C98B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fatorial", "Fatorial\Fatorial.csproj", "{6B385CF0-F11B-4682-A3A3-3679E9C98B28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vetor", "Vetor\Vetor.csproj", "{D4110B0C-B8EE-4BF5-B535-7EBCDFB83C6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vetor", "Vetor\Vetor.csproj", "{D4110B0C-B8EE-4BF5-B535-7EBCDFB83C6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioVetores", "ExercicioVetores\ExercicioVetores.csproj", "{B0A39278-4C5E-488B-AB96-ABDBAF21AC37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioVetor02", "ExercicioVetor02\ExercicioVetor02.csproj", "{57AF8601-2056-4E8E-A6A4-1DBA97CD0102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{D4110B0C-B8EE-4BF5-B535-7EBCDFB83C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4110B0C-B8EE-4BF5-B535-7EBCDFB83C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4110B0C-B8EE-4BF5-B535-7EBCDFB83C6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A39278-4C5E-488B-AB96-ABDBAF21AC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A39278-4C5E-488B-AB96-ABDBAF21AC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A39278-4C5E-488B-AB96-ABDBAF21AC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A39278-4C5E-488B-AB96-ABDBAF21AC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57AF8601-2056-4E8E-A6A4-1DBA97CD0102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57AF8601-2056-4E8E-A6A4-1DBA97CD0102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57AF8601-2056-4E8E-A6A4-1DBA97CD0102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57AF8601-2056-4E8E-A6A4-1DBA97CD0102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
