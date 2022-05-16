@@ -24,7 +24,7 @@ class Program
             matrizB[j] = Convert.ToInt32(Console.ReadLine());
         }
 
-        for(int x = 0; x < 5; x++)
+        for (int x = 0; x < 5; x++)
         {
             matrizC[x] = matrizA[x] * matrizB[x];
         }
