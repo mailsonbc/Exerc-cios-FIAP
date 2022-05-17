@@ -1,0 +1,15 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\bin\Debug\net6.0\BoletimComMatriz.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\bin\Debug\net6.0\BoletimComMatriz.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\bin\Debug\net6.0\BoletimComMatriz.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\bin\Debug\net6.0\BoletimComMatriz.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\bin\Debug\net6.0\BoletimComMatriz.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\refint\BoletimComMatriz.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\BoletimComMatriz.genruntimeconfig.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\calc-imc\Academia\BoletimComMatriz\obj\Debug\net6.0\ref\BoletimComMatriz.dll
