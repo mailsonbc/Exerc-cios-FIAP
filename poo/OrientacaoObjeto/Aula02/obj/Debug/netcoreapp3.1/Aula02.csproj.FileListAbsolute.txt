@@ -1,0 +1,14 @@
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\bin\Debug\netcoreapp3.1\Aula02.exe
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\bin\Debug\netcoreapp3.1\Aula02.deps.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\bin\Debug\netcoreapp3.1\Aula02.runtimeconfig.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\bin\Debug\netcoreapp3.1\Aula02.runtimeconfig.dev.json
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\bin\Debug\netcoreapp3.1\Aula02.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\bin\Debug\netcoreapp3.1\Aula02.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.csproj.AssemblyReference.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.AssemblyInfoInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.AssemblyInfo.cs
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.csproj.CoreCompileInputs.cache
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.dll
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.pdb
+C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\poo\OrientacaoObjeto\Aula02\obj\Debug\netcoreapp3.1\Aula02.genruntimeconfig.cache

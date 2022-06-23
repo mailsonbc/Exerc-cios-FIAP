@@ -1,0 +1,15 @@
+body{
+    background-color: lightgrey;
+    color: crimson;
+}
+p{
+    font-family:'Roboto', Verdana, Geneva, Tahoma, sans-serif;            
+    font-size: medium;
+    text-align: justify;
+}
+a{
+    font-size: 50px;
+    font-family: fantasy;
+    color: green;
+    text-decoration: none;
+}

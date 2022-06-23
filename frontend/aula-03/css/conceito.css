@@ -1,0 +1,17 @@
+div{
+    width: 300px;
+    height: 100px;
+    background-color: #598;
+    margin: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* se aplicar o padding aplicar o box-sizing */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.div-box-01{
+    color: #0dd;
+    font-size: 20px;
+    background-color: rgba(220, 56, 255, .3);
+}

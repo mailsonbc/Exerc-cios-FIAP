@@ -1,0 +1,189 @@
+:root{
+    --color-light: #fff;
+    --color-pink: #dc143c;
+    --color-black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.header-page{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-between;
+    position: absolute;
+}
+
+.header-title{
+    font-size: 35px;
+    color: var(--color-light);
+}
+
+.header-title:hover{
+    cursor: pointer;
+}
+
+.logo-pink{
+    color: var(--color-pink);
+    transition: .5s;
+}
+
+.logo-pink:hover{
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.header-menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.header-menu li{
+    margin: 0 10px;    
+}
+
+.header-menu a{
+    color: var(--color-light);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.header-menu a:hover{
+    color: var(--color-pink);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0)), url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom:  60px;
+}
+
+.hero-title{
+    color: var(--color-light);
+    font-size: 7vmin;
+    line-height: 120%;
+    margin-bottom: 30px 0;
+}
+
+.hero-subtitle{
+    color: var(--color-light);
+    font-size: 4vmin;
+    margin-bottom: 40px;
+}
+
+.btn{
+    color: var(--color-light);
+    text-decoration: none;
+    border: 3px solid var(--color-pink);
+    background-color: var(--color-pink);
+    padding: 7px 20px;
+    border-radius: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: var(--color-light);
+    color: var(--color-pink);
+}
+
+.btn-img{
+    padding: 3px 15px;    
+}
+
+.tour{
+    width: 80%;
+    min-height: 100vh;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;    
+}
+
+.tour h2{
+    font-size: 30px;
+    color: var(--color-black);
+    margin-bottom: 50px;
+}
+
+.tour-list{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tour-item{
+    width: 40%;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.tour-item img{
+    width: 100%;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.tour-item img:hover{
+    /* transform: rotate(180deg); */
+    /* transform: rotateY(90deg); */
+    cursor: pointer;
+}
+
+.tour-item-title{
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.tour-item-text{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Para fazer de acordo com o tamanho da tela */
+
+@media(max-width: 720px){
+    .header-page{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .btn-img{
+        font-size: 12px;
+    }
+
+    .tour-item{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px){
+    .header-menu a{
+        font-size: 12px;
+    }
+}
