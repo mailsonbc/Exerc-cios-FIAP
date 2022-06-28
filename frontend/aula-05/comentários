@@ -1,0 +1,83 @@
+console.log('Olá, eu sou  o console');
+console.log('Mais uma mensagem');
+console.log('----------------------------------');
+// Variáveis - NÃO SÃO TIPADAS
+// Quando vc define o valor da variável
+// ocorre uma tipagem automâtica
+// três palavras-chave para declarar as variáveis
+// Usar sempre let
+let nomeUsuario = 'Israel Marques';
+let idadeUsuario = 51;
+let emailUsuario = 'profisrael.copi@fiap.com.br';
+let logado = true;
+let contaUsuario;
+// exibir os dados das variáveis
+console.log(nomeUsuario);
+console.log(idadeUsuario);
+console.log(emailUsuario);
+console.log(logado);
+console.log(contaUsuario);
+console.log('----------------------------------');
+//Exibir o tipo que foi atribuido
+//typeof  variável
+console.log(typeof nomeUsuario, nomeUsuario);
+console.log(typeof idadeUsuario, idadeUsuario);
+console.log(typeof emailUsuario, emailUsuario);
+console.log(typeof(logado), logado);
+console.log(typeof(contaUsuario), contaUsuario);
+console.log(typeof (logado), logado);
+logado = 'abc';
+console.log(typeof (logado), logado);
+console.log('----------------------------------');
+// declaração de variável com var - ANTIGA - NÃO USAR
+// mostrar apenas - usar nunca - MELHOR LET
+var enderecoUsuario = 'Rua 123';
+console.log(enderecoUsuario);
+var enderecoUsuario = 'Rua 456';
+console.log(enderecoUsuario);
+console.log('----------------------------------');
+//CONSTANTE - NÃO MUDA O VALOR
+// SE MUDA VALOR APRESENTA ERRO
+const DATANASCIMENTO = '02/12/1970';
+console.log(DATANASCIMENTO);
+console.log('----------------------------------');
+// Concatenação - AQUI NÃO FAZ ISSO
+console.log('Usuário: ' + nomeUsuario + ' Email: ' + emailUsuario);
+// Usamos template string
+// Iniciar e finalizar com o sinal de CRASE `escrever o que quiser`
+// inclusive chamar uma variável  ${variável} ${cálculo} ${Math.random()}
+console.log(`Olá ${nomeUsuario}, sua idade é ${idadeUsuario}`);
+let primeiroNumero = 100;
+let segundoNumero = '100';
+// em JS para comparar valores devemos usar três sinais de igualdade ===
+console.log(`${primeiroNumero} + ${segundoNumero} = ${primeiroNumero + segundoNumero}`);
+console.log(`${primeiroNumero} === ${segundoNumero} = ${primeiroNumero === segundoNumero}`);
+console.log('----------------------------------');
+// Arrays em JS
+const pessoas = ['Eu', 'Tu', 'Ele', 'Nós', 'Vós', 'Eles'];
+console.log(typeof pessoas);
+console.log(pessoas);
+console.table(pessoas);
+console.log(pessoas[3]);
+pessoas[3] = 'eu mesmo';
+console.table(pessoas);
+// inserir no fim do array
+pessoas.push('eu novamente');
+console.log(pessoas);
+//remover o último elemento = REMOVER MESMO
+let removido = pessoas.pop();
+console.log(pessoas);
+console.log(removido);
+// inserir na primeira posição do array
+pessoas.unshift('eu mesmo');
+console.log(pessoas);
+//retirar o conteúdo do primeiro índice
+removido = pessoas.shift();
+console.log(pessoas);
+console.log(removido);
+// excluir 2 elementos a partir do índice 2
+pessoas.splice(2,2)
+console.log(pessoas);
+//inserir 2 elementos a partir do índice 2
+pessoas.splice(2,0,'Ele', 'eu mesmo', 1234, true, 'oi');
+console.log(pessoas);
