@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mails\OneDrive\Documentos\FIAP\Exercícios\dotnet\Fiap.Web.AspNet3\Fiap.Web.AspNet3
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Cliente/Help.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxIZWxwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Help/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVscFxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Help/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVscFxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Help/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVscFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
