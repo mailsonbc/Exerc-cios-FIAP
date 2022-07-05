@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Fiap.Web.AspNet3.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Fiap.Web.AspNet3.Controllers
 {
@@ -7,7 +8,160 @@ namespace Fiap.Web.AspNet3.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            //Simulando uma busca no banco de dados
+            var listaClientes = new List<ClienteModel>();
+            listaClientes.Add(new ClienteModel
+            {
+                ClienteId = 1,
+                Nome = "Flávio",
+                Email = "flavio@email.com",
+                DataNascimento = DateTime.Now,
+                Observacao = "Obs01"
+            });
+            listaClientes.Add(new ClienteModel
+            {
+                ClienteId = 2,
+                Nome = "Eduardo",
+                Email = "eduardo@gmail.com",
+                DataNascimento = DateTime.Now,
+                Observacao = "OBS3"
+            });
+            listaClientes.Add(new ClienteModel
+            {
+                ClienteId = 3,
+                Nome = "Moreni",
+                Email = "moreni@gmail.com",
+                DataNascimento = DateTime.Now,
+                Observacao = "OBS3"
+            });
+            listaClientes.Add(new ClienteModel
+            {
+                ClienteId = 4,
+                Nome = "Mailson",
+                Email = "mailson@gmail.com",
+                DataNascimento = DateTime.Now,
+                Observacao = "OBS3"
+            });
+            listaClientes.Add(new ClienteModel
+            {
+                ClienteId = 3,
+                Nome = "Moreni",
+                Email = "moreni@gmail.com",
+                DataNascimento = DateTime.Now,
+                Observacao = "OBS3"
+            });
+            listaClientes.Add(new ClienteModel
+            {
+                ClienteId = 3,
+                Nome = "Moreni",
+                Email = "moreni@gmail.com",
+                DataNascimento = DateTime.Now,
+                Observacao = "OBS3"
+            });
+
+            return View(listaClientes);
+        }
+
+        [HttpGet]
+        public IActionResult Novo()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Novo(ClienteModel clienteModel)
+        {
+            TempData["mensagem"] = "Cliente cadastrado com sucesso!";
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Editar(int id)
+        {
+            //mock
+            var clienteModel = new ClienteModel();
+            if (id == 1)
+            {
+                clienteModel = new ClienteModel
+                {
+                    ClienteId = 1,
+                    Nome = "Flavio",
+                    Email = "fmoreni@gmail.com",
+                    DataNascimento = DateTime.Now,
+                    Observacao = "OBS1"
+                };
+            }
+            else if (id == 2)
+            {
+                clienteModel = new ClienteModel
+                {
+                    ClienteId = 2,
+                    Nome = "Eduardo",
+                    Email = "eduardo@gmail.com",
+                    DataNascimento = DateTime.Now,
+                    Observacao = "OBS3"
+                };
+            }
+            else
+            {
+                clienteModel = new ClienteModel
+                {
+                    ClienteId = 3,
+                    Nome = "Moreni",
+                    Email = "moreni@gmail.com",
+                    DataNascimento = DateTime.Now,
+                    Observacao = "OBS3"
+                };
+            }
+            return View(clienteModel);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(ClienteModel clienteModel)
+        {
+            return View("Sucesso");
+        }
+
+        [HttpGet]
+        public IActionResult Detalhe(int id)
+        {
+            //mock
+            var clienteModel = new ClienteModel();
+            if (id == 1)
+            {
+                clienteModel = new ClienteModel
+                {
+                    ClienteId = 1,
+                    Nome = "Flavio",
+                    Email = "fmoreni@gmail.com",
+                    DataNascimento = DateTime.Now,
+                    Observacao = "OBS1"
+                };
+            }
+            else if (id == 2)
+            {
+                clienteModel = new ClienteModel
+                {
+                    ClienteId = 2,
+                    Nome = "Eduardo",
+                    Email = "eduardo@gmail.com",
+                    DataNascimento = DateTime.Now,
+                    Observacao = "OBS3"
+                };
+            }
+            else
+            {
+                clienteModel = new ClienteModel
+                {
+                    ClienteId = 3,
+                    Nome = "Moreni",
+                    Email = "moreni@gmail.com",
+                    DataNascimento = DateTime.Now,
+                    Observacao = "OBS3"
+                };
+            }
+            return View(clienteModel);
         }
 
         [HttpPost]
