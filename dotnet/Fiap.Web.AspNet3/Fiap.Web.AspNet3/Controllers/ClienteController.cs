@@ -59,6 +59,9 @@ namespace Fiap.Web.AspNet3.Controllers
                 Observacao = "OBS3"
             });
 
+            //ViewBag.MensagemObservacao = "Mensagem de teste da observação";
+            //TempData["MesagemTemp"] = "Mesangem temporária";
+
             return View(listaClientes);
         }
 
@@ -71,9 +74,17 @@ namespace Fiap.Web.AspNet3.Controllers
         [HttpPost]
         public IActionResult Novo(ClienteModel clienteModel)
         {
-            TempData["mensagem"] = "Cliente cadastrado com sucesso!";
+            if (ModelState.IsValid)
+            {
+                TempData["mensagem"] = "Cliente cadastrado com sucesso!";
 
-            return RedirectToAction("Index");
+                return RedirectToAction("Index");
+            }
+            else
+            {                
+                return View();
+            }
+            
         }
 
         [HttpGet]
@@ -120,7 +131,19 @@ namespace Fiap.Web.AspNet3.Controllers
         [HttpPost]
         public IActionResult Editar(ClienteModel clienteModel)
         {
-            return View("Sucesso");
+            if (ModelState.IsValid)
+            {
+                TempData["mensagem"] = "Cliente cadastrado com sucesso!";
+
+                //ViewBag.MensagemObservacao = "Mensagem de teste da observação"; //return View();
+                //TempData["MesagemTemp"] = "Mesangem temporária"; //return RedirectToAction();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [HttpGet]
