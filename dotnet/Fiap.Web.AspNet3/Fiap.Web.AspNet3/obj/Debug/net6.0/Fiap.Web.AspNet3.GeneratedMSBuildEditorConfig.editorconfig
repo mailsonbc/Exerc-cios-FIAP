@@ -39,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxTdWNlc3NvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Cliente/_ClienteItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfQ2xpZW50ZUl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Help/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVscFxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,3 +82,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l7h75kxjub
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Shared/_LayoutDark.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREYXJrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-qjfk11cyzz

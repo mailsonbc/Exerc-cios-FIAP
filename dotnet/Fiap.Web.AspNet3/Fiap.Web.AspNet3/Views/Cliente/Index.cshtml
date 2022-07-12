@@ -25,16 +25,8 @@
                 <tbody>
                     @foreach(var cliente in Model)
                     {
-                        <tr>
-                            <td data-field="id">@cliente.ClienteId</td>
-                            <td data-field="name">@cliente.Nome</td>
-                            <td class="actions" width="220">
-                                <a asp-controller="Cliente" asp-action="detalhe" asp-route-id="@cliente.ClienteId" class="btn btn-info btn-sm">Detalhe</a>
-                                <a asp-controller="Cliente" asp-action="editar" asp-route-id="@cliente.ClienteId" class="btn btn-warning btn-sm">Editar</a>
-                            </td>
-                        </tr>        
-                    }
-                              
+                        <partial name="_ClienteItem" model="cliente" /> 
+                    }                              
                 </tbody>
             </table>
         </div>
