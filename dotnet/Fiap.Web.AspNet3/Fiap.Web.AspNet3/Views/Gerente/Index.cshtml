@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Fiap.Web.AspNet3.Models.GerenteModel>
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Gerentes</h1>
+            
+            <p class="toolbar">
+                <a class="create btn btn-dark" asp-controller="Gerente" asp-action="Novo">Novo Gerente</a>
+            </p>
+            <table class="table table-striped" border="1" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th data-field="id">Id</th>
+                        <th data-field="name">Nome</th>
+                        <th data-field="name">Sobrenome</th>
+                        <th class="actions" width="220">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var gerente in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => gerente.GerenteId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => gerente.NomeGerente)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => gerente.Sobrenome)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@gerente.GerenteId">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@gerente.GerenteId">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@gerente.GerenteId">Delete</a>
+                            </td>
+                        </tr>
+                    }                              
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -16,10 +16,34 @@ namespace Fiap.Web.AspNet3.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.6")
+                .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.GerenteModel", b =>
+                {
+                    b.Property<int>("GerenteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("GerenteId");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GerenteId"), 1L, 1);
+
+                    b.Property<string>("NomeGerente")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("GerenteId");
+
+                    b.ToTable("Gerente");
+                });
 
             modelBuilder.Entity("Fiap.Web.AspNet3.Models.RepresentanteModel", b =>
                 {
