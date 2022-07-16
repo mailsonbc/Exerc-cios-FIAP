@@ -1,34 +1,54 @@
-﻿@model IEnumerable<ClienteModel>
-    
-@{
-}
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Clientes</h1>
-            @if(!String.IsNullOrEmpty((String)TempData["mensagem"]))
-            {
-                <div class="alert alert-warning" role="alert">@TempData["mensagem"]</div>
-            }
+﻿@model IEnumerable<Fiap.Web.AspNet3.Models.ClienteModel>
 
-            <p class="toolbar">
-                <a class="create btn btn-dark" asp-controller="Cliente" asp-action="Novo">Novo Cliente</a>
-            </p>
-            <table class="table table-striped" border="1" cellspacing="0" cellpadding="0">
-                <thead>
-                    <tr>
-                        <th data-field="id">Id</th>
-                        <th data-field="name">Nome</th>
-                        <th class="actions" width="220">Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach(var cliente in Model)
-                    {
-                        <partial name="_ClienteItem" model="cliente" /> 
-                    }                              
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="btn btn-primary btn-sm" asp-action="Create">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observacao)
+            </td>
+            <td>
+                <a class="btn btn-primary btn-sm" asp-action="Detalhe" asp-route-id="@item.ClienteId">Detalhe</a>
+                <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@item.ClienteId">Editar</a>                
+                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ClienteId">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

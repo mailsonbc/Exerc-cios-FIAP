@@ -43,8 +43,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfQ2xpZW50ZUl0ZW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Gerente/Detalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VyZW50ZVxEZXRhbGhlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Gerente/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VyZW50ZVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Gerente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VyZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Gerente/Novo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VyZW50ZVxOb3ZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Help/About.cshtml]
@@ -67,24 +79,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxEZWxldGUuY3NodG1s
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxEZWxldGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxFZGl0LmNzaHRtbA==
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Representante/Novo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwcmVzZW50YW50ZVxOb3ZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mails/OneDrive/Documentos/FIAP/Exercícios/dotnet/Fiap.Web.AspNet3/Fiap.Web.AspNet3/Views/Shared/Error.cshtml]

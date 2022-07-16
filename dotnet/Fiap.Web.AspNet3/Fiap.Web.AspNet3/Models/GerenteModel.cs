@@ -9,14 +9,25 @@ namespace Fiap.Web.AspNet3.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("GerenteId")]
-        public int? GerenteId { get; set; }
+        public int GerenteId { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string NomeGerente { get; set; }
+        public string? NomeGerente { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Sobrenome { get; set; }
+        public string? Sobrenome { get; set; }
+
+        public GerenteModel()
+        {
+
+        }
+
+        public GerenteModel(int gerenteId, string nomeGerente)
+        {
+            GerenteId = gerenteId;
+            NomeGerente = nomeGerente;
+        }
     }
 }

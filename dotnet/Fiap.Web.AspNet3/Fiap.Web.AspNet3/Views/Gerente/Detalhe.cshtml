@@ -1,0 +1,31 @@
+﻿@model Fiap.Web.AspNet3.Models.GerenteModel
+
+@{
+    ViewData["Title"] = "Destalhe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Destalhe</h1>
+
+<div>
+    <h4>GerenteModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomeGerente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeGerente)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sobrenome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sobrenome)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@Model?.GerenteId">Editar</a> |
+    <a class="btn btn-dark btn-sm" asp-action="Index">Voltar</a>
+</div>

@@ -1,0 +1,40 @@
+﻿@model Fiap.Web.AspNet3.Models.GerenteModel
+
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar</h1>
+
+<h4>GerenteModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GerenteId" />
+            <div class="form-group">
+                <label asp-for="NomeGerente" class="control-label"></label>
+                <input asp-for="NomeGerente" class="form-control" />
+                <span asp-validation-for="NomeGerente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sobrenome" class="control-label"></label>
+                <input asp-for="Sobrenome" class="form-control" />
+                <span asp-validation-for="Sobrenome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary btn-sm" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a class="btn btn-dark btn-sm" asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

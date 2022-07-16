@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Fiap.Web.AspNet3.Models.GerenteModel>
 @{
+    ViewData["Title"] = "Index";
 }
 
 <div class="container">
@@ -8,7 +9,7 @@
             <h1>Gerentes</h1>
             
             <p class="toolbar">
-                <a class="create btn btn-dark" asp-controller="Gerente" asp-action="Novo">Novo Gerente</a>
+                <a class="btn btn-dark btn-sm" asp-controller="Gerente" asp-action="Novo">Novo Gerente</a>
             </p>
             <table class="table table-striped" border="1" cellspacing="0" cellpadding="0">
                 <thead>
@@ -33,9 +34,9 @@
                                 @Html.DisplayFor(modelItem => gerente.Sobrenome)
                             </td>
                             <td>
-                                <a asp-action="Edit" asp-route-id="@gerente.GerenteId">Edit</a> |
-                                <a asp-action="Details" asp-route-id="@gerente.GerenteId">Details</a> |
-                                <a asp-action="Delete" asp-route-id="@gerente.GerenteId">Delete</a>
+                                <a class="btn btn-info btn-sm" asp-action="Detalhe" asp-route-id="@gerente.GerenteId">Detalhes</a>
+                                <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@gerente.GerenteId">Editar</a>                                
+                                <a class="btn btn-danger btn-sm" asp-action="Deletar" asp-route-id="@gerente.GerenteId">Deletar</a>
                             </td>
                         </tr>
                     }                              

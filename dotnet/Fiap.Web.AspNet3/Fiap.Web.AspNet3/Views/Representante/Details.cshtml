@@ -19,6 +19,7 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.RepresentanteId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    @*<input type="hidden" asp-for="RepresentanteId" readonly/>*@
+    <a class="btn btn-warning btn-sm" asp-action="Editar" asp-controller="Representante" asp-route-id="@Model?.RepresentanteId">Editar</a>
+    <a class="btn btn-dark btn-sm" asp-action="Index">Voltar</a>
 </div>

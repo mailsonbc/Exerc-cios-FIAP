@@ -1,66 +1,23 @@
-﻿using Fiap.Web.AspNet3.Models;
+﻿using Fiap.Web.AspNet3.Data;
+using Fiap.Web.AspNet3.Models;
+using Fiap.Web.AspNet3.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fiap.Web.AspNet3.Controllers
 {
     public class ClienteController : Controller
     {
+        private readonly ClienteRepository clienteRepository;
+
+        public ClienteController(DataContext context)
+        {
+            clienteRepository = new ClienteRepository(context);
+        }
+
         [HttpGet]
         public IActionResult Index()
         {
-            //Simulando uma busca no banco de dados
-            var listaClientes = new List<ClienteModel>();
-            listaClientes.Add(new ClienteModel
-            {
-                ClienteId = 1,
-                Nome = "Flávio",
-                Email = "flavio@email.com",
-                DataNascimento = DateTime.Now,
-                Observacao = "Obs01"
-            });
-            listaClientes.Add(new ClienteModel
-            {
-                ClienteId = 2,
-                Nome = "Eduardo",
-                Email = "eduardo@gmail.com",
-                DataNascimento = DateTime.Now,
-                Observacao = "OBS3"
-            });
-            listaClientes.Add(new ClienteModel
-            {
-                ClienteId = 3,
-                Nome = "Moreni",
-                Email = "moreni@gmail.com",
-                DataNascimento = DateTime.Now,
-                Observacao = "OBS3"
-            });
-            listaClientes.Add(new ClienteModel
-            {
-                ClienteId = 4,
-                Nome = "Mailson",
-                Email = "mailson@gmail.com",
-                DataNascimento = DateTime.Now,
-                Observacao = "OBS3"
-            });
-            listaClientes.Add(new ClienteModel
-            {
-                ClienteId = 3,
-                Nome = "Moreni",
-                Email = "moreni@gmail.com",
-                DataNascimento = DateTime.Now,
-                Observacao = "OBS3"
-            });
-            listaClientes.Add(new ClienteModel
-            {
-                ClienteId = 3,
-                Nome = "Moreni",
-                Email = "moreni@gmail.com",
-                DataNascimento = DateTime.Now,
-                Observacao = "OBS3"
-            });
-
-            //ViewBag.MensagemObservacao = "Mensagem de teste da observação";
-            //TempData["MesagemTemp"] = "Mesangem temporária";
+            var listaClientes = clienteRepository.FindAll();
 
             return View(listaClientes);
         }
@@ -76,8 +33,7 @@ namespace Fiap.Web.AspNet3.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["mensagem"] = "Cliente cadastrado com sucesso!";
-
+                clienteRepository.Insert(clienteModel);
                 return RedirectToAction("Index");
             }
             else
@@ -90,40 +46,10 @@ namespace Fiap.Web.AspNet3.Controllers
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            //mock
-            var clienteModel = new ClienteModel();
-            if (id == 1)
+            var clienteModel = clienteRepository.FindById(id);
+            if(clienteModel == null)
             {
-                clienteModel = new ClienteModel
-                {
-                    ClienteId = 1,
-                    Nome = "Flavio",
-                    Email = "fmoreni@gmail.com",
-                    DataNascimento = DateTime.Now,
-                    Observacao = "OBS1"
-                };
-            }
-            else if (id == 2)
-            {
-                clienteModel = new ClienteModel
-                {
-                    ClienteId = 2,
-                    Nome = "Eduardo",
-                    Email = "eduardo@gmail.com",
-                    DataNascimento = DateTime.Now,
-                    Observacao = "OBS3"
-                };
-            }
-            else
-            {
-                clienteModel = new ClienteModel
-                {
-                    ClienteId = 3,
-                    Nome = "Moreni",
-                    Email = "moreni@gmail.com",
-                    DataNascimento = DateTime.Now,
-                    Observacao = "OBS3"
-                };
+                return NotFound();
             }
             return View(clienteModel);
         }
@@ -133,56 +59,19 @@ namespace Fiap.Web.AspNet3.Controllers
         {
             if (ModelState.IsValid)
             {
-                TempData["mensagem"] = "Cliente cadastrado com sucesso!";
-
-                //ViewBag.MensagemObservacao = "Mensagem de teste da observação"; //return View();
-                //TempData["MesagemTemp"] = "Mesangem temporária"; //return RedirectToAction();
-
+                clienteRepository.UpDate(clienteModel);
                 return RedirectToAction("Index");
             }
-            else
-            {
-                return View();
-            }
+            return View(clienteModel);
         }
 
         [HttpGet]
         public IActionResult Detalhe(int id)
         {
-            //mock
-            var clienteModel = new ClienteModel();
-            if (id == 1)
+            var clienteModel = clienteRepository.FindById(id);
+            if(clienteModel == null)
             {
-                clienteModel = new ClienteModel
-                {
-                    ClienteId = 1,
-                    Nome = "Flavio",
-                    Email = "fmoreni@gmail.com",
-                    DataNascimento = DateTime.Now,
-                    Observacao = "OBS1"
-                };
-            }
-            else if (id == 2)
-            {
-                clienteModel = new ClienteModel
-                {
-                    ClienteId = 2,
-                    Nome = "Eduardo",
-                    Email = "eduardo@gmail.com",
-                    DataNascimento = DateTime.Now,
-                    Observacao = "OBS3"
-                };
-            }
-            else
-            {
-                clienteModel = new ClienteModel
-                {
-                    ClienteId = 3,
-                    Nome = "Moreni",
-                    Email = "moreni@gmail.com",
-                    DataNascimento = DateTime.Now,
-                    Observacao = "OBS3"
-                };
+                return NotFound();
             }
             return View(clienteModel);
         }

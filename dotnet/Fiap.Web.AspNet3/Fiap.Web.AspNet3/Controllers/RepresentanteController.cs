@@ -41,7 +41,7 @@ namespace Fiap.Web.AspNet3.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult Novo()
         {
             return View();
         }
@@ -49,7 +49,7 @@ namespace Fiap.Web.AspNet3.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("RepresentanteId,NomeRepresentante")] RepresentanteModel representanteModel)
+        public IActionResult Novo([Bind("RepresentanteId,NomeRepresentante")] RepresentanteModel representanteModel)
         {
             if (ModelState.IsValid)
             {
@@ -60,7 +60,7 @@ namespace Fiap.Web.AspNet3.Controllers
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public IActionResult Editar(int id)
         {
 
 
@@ -74,8 +74,7 @@ namespace Fiap.Web.AspNet3.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("RepresentanteId,NomeRepresentante")] RepresentanteModel representanteModel)
+        public IActionResult Editar(int id, [Bind("RepresentanteId,NomeRepresentante")] RepresentanteModel representanteModel)
         {
             if (id != representanteModel.RepresentanteId)
             {
@@ -101,6 +100,28 @@ namespace Fiap.Web.AspNet3.Controllers
                 //    }
                 //}
                 //return RedirectToAction(nameof(Index));
+            }
+            return View(representanteModel);
+        }
+
+        [HttpGet]
+        public IActionResult Deletar(int id)
+        {
+            var representanteModel = representanteRepository.FindById(id);
+            if (representanteModel == null)
+            {
+                return NotFound();
+            }
+            return View(representanteModel);
+        }
+
+        [HttpDelete, ActionName("Deletar")]
+        public IActionResult Deletar(int id, RepresentanteModel representanteModel)
+        {
+            if (ModelState.IsValid)
+            {
+                representanteRepository.Delete(id);
+                return RedirectToAction("Index");
             }
             return View(representanteModel);
         }
