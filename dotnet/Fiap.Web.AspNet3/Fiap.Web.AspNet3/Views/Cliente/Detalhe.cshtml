@@ -26,6 +26,10 @@
                         <label class="control-label">Observação</label>
                         <textarea class="form-control" name="Observacao" readonly>@Model.Observacao</textarea>
                     </div>
+                    <div class="form-group">
+                        <label class="control-label">Representante</label>
+                        <input class="form-control col-5" name="Representante" value="@Model.RepresentanteId - @Model.Representante.NomeRepresentante" readonly/>
+                    </div>
                     <a href="/cliente" class="btn btn-dark btn-sm">Voltar</a>                
                 </form>
             </div>

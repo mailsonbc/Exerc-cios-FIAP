@@ -8,7 +8,7 @@
 <h1>Index</h1>
 
 <p>
-    <a class="btn btn-primary btn-sm" asp-action="Create">Novo</a>
+    <a class="btn btn-primary btn-sm" asp-action="Novo">Novo</a>
 </p>
 <table class="table">
     <thead>
@@ -24,6 +24,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Observacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RepresentanteId)
             </th>
             <th></th>
         </tr>
@@ -42,6 +45,10 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Observacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RepresentanteId),
+                @Html.DisplayFor(modelItem => item.Representante.NomeRepresentante)
             </td>
             <td>
                 <a class="btn btn-primary btn-sm" asp-action="Detalhe" asp-route-id="@item.ClienteId">Detalhe</a>

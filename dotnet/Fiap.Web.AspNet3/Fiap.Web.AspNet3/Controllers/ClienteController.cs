@@ -8,10 +8,12 @@ namespace Fiap.Web.AspNet3.Controllers
     public class ClienteController : Controller
     {
         private readonly ClienteRepository clienteRepository;
+        private readonly RepresentanteRepository representanteRepository;
 
         public ClienteController(DataContext context)
         {
             clienteRepository = new ClienteRepository(context);
+            representanteRepository = new RepresentanteRepository(context);
         }
 
         [HttpGet]
@@ -25,7 +27,10 @@ namespace Fiap.Web.AspNet3.Controllers
         [HttpGet]
         public IActionResult Novo()
         {
-            return View();
+            var listaRepresentantes = representanteRepository.FindAll();
+            ViewBag.representantes = listaRepresentantes;
+
+            return View(new ClienteModel());
         }
 
         [HttpPost]
@@ -37,8 +42,11 @@ namespace Fiap.Web.AspNet3.Controllers
                 return RedirectToAction("Index");
             }
             else
-            {                
-                return View();
+            {
+                var listaRepresentantes = representanteRepository.FindAll();
+                ViewBag.representantes = listaRepresentantes;
+
+                return View(clienteModel);
             }
             
         }

@@ -37,6 +37,12 @@ namespace Fiap.Web.AspNet3.Models
         [StringLength(500)]
         public string Observacao { get; set; }
 
+        [Display(Name = "Representante")]
+        public int RepresentanteId { get; set; }
+
+        [ForeignKey("RepresentanteId")]
+        public RepresentanteModel Representante { get; set; }
+
         public ClienteModel()
         {
 
