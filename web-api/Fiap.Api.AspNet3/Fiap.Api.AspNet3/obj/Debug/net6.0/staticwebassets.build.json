@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZcHyC29G2NDZWbKuuyFGe6DXIIn/zLeO5oF+SHOGsew=",
+  "Source": "Fiap.Api.AspNet3",
+  "BasePath": "_content/Fiap.Api.AspNet3",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

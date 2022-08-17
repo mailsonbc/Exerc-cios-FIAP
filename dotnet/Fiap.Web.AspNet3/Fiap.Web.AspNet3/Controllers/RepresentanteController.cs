@@ -1,6 +1,7 @@
 ﻿using Fiap.Web.AspNet3.Data;
 using Fiap.Web.AspNet3.Models;
 using Fiap.Web.AspNet3.Repository;
+using Fiap.Web.AspNet3.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,12 +10,12 @@ namespace Fiap.Web.AspNet3.Controllers
     public class RepresentanteController : Controller
     {
         //private readonly DataContext _context;
-        private readonly RepresentanteRepository representanteRepository;
+        private readonly IRepresentanteRepository representanteRepository;
 
-        public RepresentanteController(DataContext context)
+        public RepresentanteController(IRepresentanteRepository repository)
         {
             //_context = context;
-            representanteRepository = new RepresentanteRepository(context);
+            representanteRepository = repository;
         }
 
         [HttpGet]
@@ -30,8 +31,9 @@ namespace Fiap.Web.AspNet3.Controllers
         public IActionResult Details(int id)
         {
 
-            var representanteModel = representanteRepository.FindById(id);
-                //.FirstOrDefaultAsync(m => m.RepresentanteId == id);     //FirstOrDefault ou Find(id) para lista apenas um item
+            //var representanteModel = representanteRepository.FindById(id);
+            var representanteModel = representanteRepository.FindByIdWithClientes(id);
+            //.FirstOrDefaultAsync(m => m.RepresentanteId == id);     //FirstOrDefault ou Find(id) para lista apenas um item
             if (representanteModel == null)
             {
                 return NotFound();

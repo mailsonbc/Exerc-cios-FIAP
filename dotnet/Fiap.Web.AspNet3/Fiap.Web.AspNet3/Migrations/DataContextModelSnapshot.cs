@@ -114,6 +114,63 @@ namespace Fiap.Web.AspNet3.Migrations
                     b.ToTable("Gerente");
                 });
 
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.LojaModel", b =>
+                {
+                    b.Property<int>("LojaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LojaId"), 1L, 1);
+
+                    b.Property<string>("LojaNome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LojaId");
+
+                    b.ToTable("Loja");
+                });
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.ProdutoLojaModel", b =>
+                {
+                    b.Property<int>("ProdutoLojaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProdutoLojaId"), 1L, 1);
+
+                    b.Property<int>("LojaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProdutoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProdutoLojaId");
+
+                    b.HasIndex("LojaId");
+
+                    b.HasIndex("ProdutoId");
+
+                    b.ToTable("ProdutoLoja");
+                });
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.ProdutoModel", b =>
+                {
+                    b.Property<int>("ProdutoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProdutoId"), 1L, 1);
+
+                    b.Property<string>("ProdutoNome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ProdutoId");
+
+                    b.ToTable("Produto");
+                });
+
             modelBuilder.Entity("Fiap.Web.AspNet3.Models.RepresentanteModel", b =>
                 {
                     b.Property<int>("RepresentanteId")
@@ -133,15 +190,80 @@ namespace Fiap.Web.AspNet3.Migrations
                     b.ToTable("Representante");
                 });
 
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.UsuarioModel", b =>
+                {
+                    b.Property<int>("UsuarioId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioId"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UsuarioEmail")
+                        .IsRequired()
+                        .HasMaxLength(70)
+                        .HasColumnType("nvarchar(70)");
+
+                    b.Property<string>("UsuarioNome")
+                        .IsRequired()
+                        .HasMaxLength(70)
+                        .HasColumnType("nvarchar(70)");
+
+                    b.Property<string>("UsuarioSenha")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.HasKey("UsuarioId");
+
+                    b.ToTable("Usuario");
+                });
+
             modelBuilder.Entity("Fiap.Web.AspNet3.Models.ClienteModel", b =>
                 {
                     b.HasOne("Fiap.Web.AspNet3.Models.RepresentanteModel", "Representante")
-                        .WithMany()
+                        .WithMany("Clientes")
                         .HasForeignKey("RepresentanteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Representante");
+                });
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.ProdutoLojaModel", b =>
+                {
+                    b.HasOne("Fiap.Web.AspNet3.Models.LojaModel", "Loja")
+                        .WithMany("ProdutosLojas")
+                        .HasForeignKey("LojaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Fiap.Web.AspNet3.Models.ProdutoModel", "Produto")
+                        .WithMany("ProdutosLojas")
+                        .HasForeignKey("ProdutoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Loja");
+
+                    b.Navigation("Produto");
+                });
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.LojaModel", b =>
+                {
+                    b.Navigation("ProdutosLojas");
+                });
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.ProdutoModel", b =>
+                {
+                    b.Navigation("ProdutosLojas");
+                });
+
+            modelBuilder.Entity("Fiap.Web.AspNet3.Models.RepresentanteModel", b =>
+                {
+                    b.Navigation("Clientes");
                 });
 #pragma warning restore 612, 618
         }

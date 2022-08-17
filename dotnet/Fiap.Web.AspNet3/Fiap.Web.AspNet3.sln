@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Web.AspNet3", "Fiap.Web.AspNet3\Fiap.Web.AspNet3.csproj", "{A0754BEE-7FC7-4138-89FC-7F43F0A6795F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Web.AspNet3", "Fiap.Web.AspNet3\Fiap.Web.AspNet3.csproj", "{A0754BEE-7FC7-4138-89FC-7F43F0A6795F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Web.AspNet3Test", "Fiap.Web.AspNet3Test\Fiap.Web.AspNet3Test.csproj", "{B6F79847-ACAA-48FB-A1F3-477513FE47B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A0754BEE-7FC7-4138-89FC-7F43F0A6795F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0754BEE-7FC7-4138-89FC-7F43F0A6795F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0754BEE-7FC7-4138-89FC-7F43F0A6795F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F79847-ACAA-48FB-A1F3-477513FE47B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F79847-ACAA-48FB-A1F3-477513FE47B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F79847-ACAA-48FB-A1F3-477513FE47B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F79847-ACAA-48FB-A1F3-477513FE47B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

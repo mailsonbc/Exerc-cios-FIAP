@@ -1,9 +1,11 @@
 ﻿using Fiap.Web.AspNet3.Data;
 using Fiap.Web.AspNet3.Models;
+using Fiap.Web.AspNet3.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace Fiap.Web.AspNet3.Repository
 {
-    public class RepresentanteRepository
+    public class RepresentanteRepository : IRepresentanteRepository
     {
         private readonly DataContext dataContext;
         public RepresentanteRepository(DataContext ctx)
@@ -16,7 +18,12 @@ namespace Fiap.Web.AspNet3.Repository
             return dataContext.Representantes.ToList<RepresentanteModel>();
         }
 
-        public RepresentanteModel FindById(int representanteId)
+        public RepresentanteModel? FindByIdWithClientes(int idRepresentante)
+        {
+            return dataContext.Representantes.Include(r => r.Clientes).SingleOrDefault(r => r.RepresentanteId == idRepresentante);
+        }
+
+        public RepresentanteModel? FindById(int representanteId)
         {
             return dataContext.Representantes.Find(representanteId);
         }

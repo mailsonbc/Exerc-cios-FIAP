@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Fiap.Web.AspNet3.Models.ClienteModel>
+﻿@model Fiap.Web.AspNet3.ViewModel.ClientePesquisaViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -10,52 +10,61 @@
 <p>
     <a class="btn btn-primary btn-sm" asp-action="Novo">Novo</a>
 </p>
-<table class="table">
+
+<div class="jumbotron">
+    <form asp-action="Pesquisar">
+        <div class="form-group">
+            <label class="control-label">Pesquisar o Nome</label>
+            <input class="form-control col-5" asp-for="ClienteNome" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Pesquisar Email</label>
+            <input class="form-control col-5" asp-for="ClienteEmail" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Pesquisar Representante</label>
+            <select class="form-control col-5" asp-for="RepresentanteId" asp-items="@Model.Representantes">
+                <option value="">Selecione</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+    </form>
+</div>
+<hr />
+
+@if( Model.Clientes != null && Model.Clientes.Count() > 0) {
+    @*<partial name="_ClienteItem" model="Model" />*@
+    <table class="table table-striped" border="1" cellspacing="0" cellpadding="0">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Observacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RepresentanteId)
-            </th>
-            <th></th>
+            <th data-field="id">Id</th>
+            <th data-field="name">Nome</th>
+            <th data-field="representante">Representante</th>
+            <th class="actions" width="220">Ações</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataNascimento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Observacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RepresentanteId),
-                @Html.DisplayFor(modelItem => item.Representante.NomeRepresentante)
-            </td>
-            <td>
-                <a class="btn btn-primary btn-sm" asp-action="Detalhe" asp-route-id="@item.ClienteId">Detalhe</a>
-                <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@item.ClienteId">Editar</a>                
-                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ClienteId">Deletar</a>
-            </td>
-        </tr>
-}
+
+        @foreach( var cliente in Model.Clientes) {
+            <tr>
+                <td data-field="id">@cliente.ClienteId</td>
+                <td data-field="name">@cliente.Nome</td>
+                <td data-field="representante">@cliente.Representante.NomeRepresentante</td>
+                <td class="actions" width="220">
+
+                    <a  asp-controller="cliente" 
+                        asp-action="detalhe" 
+                        asp-route-id="@cliente.ClienteId"  
+                        class="btn btn-info btn-sm">Detalhe</a>
+
+                    <a  asp-controller="cliente" 
+                        asp-action="editar" 
+                        asp-route-id="@cliente.ClienteId" 
+                        class="btn btn-warning btn-sm">Editar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+}

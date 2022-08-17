@@ -1,0 +1,17 @@
+﻿@model Fiap.Web.AspNet3.Models.ProdutoModel
+
+<div>
+    <h4>GerenteModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProdutoNome)
+        </dt>
+        
+
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@Model?.ProdutoId">Editar</a> |
+    <a class="btn btn-dark btn-sm" asp-action="Index">Voltar</a>
+</div>

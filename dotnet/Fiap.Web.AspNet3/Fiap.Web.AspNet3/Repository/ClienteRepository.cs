@@ -1,10 +1,11 @@
 ﻿using Fiap.Web.AspNet3.Data;
 using Fiap.Web.AspNet3.Models;
+using Fiap.Web.AspNet3.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fiap.Web.AspNet3.Repository
 {
-    public class ClienteRepository
+    public class ClienteRepository : IClienteRepository
     {
         private readonly DataContext dataContext;
         public ClienteRepository(DataContext ctx)
@@ -12,9 +13,23 @@ namespace Fiap.Web.AspNet3.Repository
             dataContext = ctx;
         }
 
-        public List<ClienteModel> FindAll()
+        public IList<ClienteModel> FindAll()
         {
             return dataContext.Clientes.Include(c => c.Representante).ToList<ClienteModel>();
+        }
+
+        public IList<ClienteModel> FindAllOrderByNomeAsc()
+        {
+            //var listaClientes = dataContext.Clientes.Include(c => c.Representante).ToList();
+            var listaClientes = dataContext.Clientes.Include(c => c.Representante).OrderBy(c => c.Nome).ToList();
+            return listaClientes == null ? new List<ClienteModel>() : listaClientes;
+        }
+
+        public IList<ClienteModel> FindAllOrderByNomeDesc()
+        {
+            //var listaClientes = dataContext.Clientes.Include(c => c.Representante).ToList();
+            var listaClientes = dataContext.Clientes.Include(c => c.Representante).OrderByDescending(c => c.Nome).ToList();
+            return listaClientes == null ? new List<ClienteModel>() : listaClientes;
         }
 
         public ClienteModel FindById(int clienteId)
@@ -26,9 +41,25 @@ namespace Fiap.Web.AspNet3.Repository
             return cliente;
         }
 
-        public List<ClienteModel> FindByName(string nomeCliente)
+        public IList<ClienteModel> FindByNome(string nomeCliente)
         {
-            return null;
+            var listaClientes = dataContext.Clientes.Include(c => c.Representante).Where(c => c.Nome.Contains(nomeCliente)).OrderBy(c => c.Nome).ToList();
+            return listaClientes == null ? new List<ClienteModel>() : listaClientes;
+        }
+
+        public IList<ClienteModel> FindByNomeAndEmail(string nomeCliente, string email)
+        {
+            var listaClientes = dataContext.Clientes.Include(c => c.Representante)
+                .Where(c => c.Nome.Contains(nomeCliente) && c.Email.Contains(email)).OrderBy(c => c.Nome).ToList();
+            return listaClientes == null ? new List<ClienteModel>() : listaClientes;
+        }
+
+        public IList<ClienteModel> FindByNomeAndEmailAndRepresentante(string nomeCliente, string email, int idRepresentante)
+        {
+            var listaClientes = dataContext.Clientes.Include(c => c.Representante)
+                .Where(c => c.Nome.Contains(nomeCliente) && c.Email.Contains(email) && (0 == idRepresentante || (c.RepresentanteId == idRepresentante)))
+                .OrderBy(c => c.Nome).ToList();
+            return listaClientes == null ? new List<ClienteModel>() : listaClientes;
         }
 
         public void Insert(ClienteModel clienteModel)
