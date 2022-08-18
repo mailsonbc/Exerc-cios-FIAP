@@ -4,10 +4,10 @@ namespace Fiap.Api.AspNet3.Repository.Interface
 {
     public interface ICategoriaRepository
     {
-        public IList<MarcaModel> GetAll();
-        public MarcaModel Get(int id);
-        public void Post(MarcaModel marcaModel);
-        public void Put(MarcaModel marcaModel);
-        public void Delete(int id);
+        public IList<CategoriaModel> GetAll();
+        public CategoriaModel Get(int id);
+        public void Post(CategoriaModel categoriaModel);
+        public void Put(CategoriaModel categoriaModel);
+        public void Delete(CategoriaModel categoriaModel);
     }
 }

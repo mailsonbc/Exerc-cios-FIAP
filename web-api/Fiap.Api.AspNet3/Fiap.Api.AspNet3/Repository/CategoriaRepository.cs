@@ -14,32 +14,33 @@ namespace Fiap.Api.AspNet3.Repository
             Ctx = context;
         }
 
-        public void Delete(int id)
+        public void Delete(CategoriaModel categoriaModel)
         {
-            //Ctx.Marcas.Remove(id);
+            Ctx.Categorias.Remove(categoriaModel);
             Ctx.SaveChanges();
         }
 
-        public MarcaModel Get(int id)
+        public CategoriaModel Get(int id)
         {
-            var marca = Ctx.Marcas.Find(id);
-            return marca;
+            var categoria = Ctx.Categorias.Find(id);
+            return categoria;
         }
 
-        public IList<MarcaModel> GetAll()
+        public IList<CategoriaModel> GetAll()
         {
-            var listaMarcas = Ctx.Marcas.AsNoTracking().ToList();
-            return listaMarcas;
+            var listaCategoria = Ctx.Categorias.AsNoTracking().ToList();
+            return listaCategoria;
         }
 
-        public void Post(MarcaModel marcaModel)
+        public void Post(CategoriaModel categoriaModel)
         {
-            Ctx.Marcas.Add(marcaModel);
+            Ctx.Categorias.Add(categoriaModel);
+            Ctx.SaveChanges();
         }
 
-        public void Put(MarcaModel marcaModel)
+        public void Put(CategoriaModel categoriaModel)
         {
-            Ctx.Marcas.Update(marcaModel);
+            Ctx.Categorias.Update(categoriaModel);
             Ctx.SaveChanges();
         }
     }
