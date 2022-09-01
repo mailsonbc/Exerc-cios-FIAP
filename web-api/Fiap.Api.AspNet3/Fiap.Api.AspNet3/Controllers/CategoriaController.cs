@@ -19,7 +19,8 @@ namespace Fiap.Api.AspNet3.Controllers
         [HttpGet]
         public IList<CategoriaModel> Get()
         {
-            return categoriaRepository.GetAll();
+            var cat = categoriaRepository.GetAll();
+            return cat;
         }
 
         [HttpGet("{id}")]

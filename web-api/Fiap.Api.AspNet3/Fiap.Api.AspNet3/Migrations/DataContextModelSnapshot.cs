@@ -115,6 +115,9 @@ namespace Fiap.Api.AspNet3.Migrations
                         .HasMaxLength(3000)
                         .HasColumnType("nvarchar(3000)");
 
+                    b.Property<int>("CategoriaId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("DataLancamento")
                         .HasColumnType("datetime2");
 
@@ -150,7 +153,8 @@ namespace Fiap.Api.AspNet3.Migrations
                         {
                             ProdutoId = 1,
                             Caracteristicas = "",
-                            DataLancamento = new DateTime(2022, 8, 11, 21, 28, 35, 789, DateTimeKind.Local).AddTicks(8898),
+                            CategoriaId = 2,
+                            DataLancamento = new DateTime(2022, 8, 20, 10, 5, 50, 171, DateTimeKind.Local).AddTicks(2636),
                             Descricao = "Apple iPhone 12",
                             MarcaId = 2,
                             Nome = "iPhone 12 mini",
@@ -161,7 +165,8 @@ namespace Fiap.Api.AspNet3.Migrations
                         {
                             ProdutoId = 2,
                             Caracteristicas = "",
-                            DataLancamento = new DateTime(2022, 8, 11, 21, 28, 35, 789, DateTimeKind.Local).AddTicks(8909),
+                            CategoriaId = 2,
+                            DataLancamento = new DateTime(2022, 8, 20, 10, 5, 50, 171, DateTimeKind.Local).AddTicks(2781),
                             Descricao = "Apple iPhone 11",
                             MarcaId = 2,
                             Nome = "iPhone 11",
@@ -172,7 +177,8 @@ namespace Fiap.Api.AspNet3.Migrations
                         {
                             ProdutoId = 3,
                             Caracteristicas = "",
-                            DataLancamento = new DateTime(2022, 8, 11, 21, 28, 35, 789, DateTimeKind.Local).AddTicks(8910),
+                            CategoriaId = 2,
+                            DataLancamento = new DateTime(2022, 8, 20, 10, 5, 50, 171, DateTimeKind.Local).AddTicks(2784),
                             Descricao = "Apple iPhone 12",
                             MarcaId = 2,
                             Nome = "iPhone 12",
@@ -183,7 +189,8 @@ namespace Fiap.Api.AspNet3.Migrations
                         {
                             ProdutoId = 4,
                             Caracteristicas = "",
-                            DataLancamento = new DateTime(2022, 8, 11, 21, 28, 35, 789, DateTimeKind.Local).AddTicks(8911),
+                            CategoriaId = 2,
+                            DataLancamento = new DateTime(2022, 8, 20, 10, 5, 50, 171, DateTimeKind.Local).AddTicks(2785),
                             Descricao = "Apple iPhone 13",
                             MarcaId = 2,
                             Nome = "iPhone 13",

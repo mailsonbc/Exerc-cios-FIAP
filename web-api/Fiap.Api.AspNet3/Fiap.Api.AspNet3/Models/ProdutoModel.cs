@@ -24,6 +24,7 @@ namespace Fiap.Api.AspNet3.Models
         [MaxLength(3000)]
         public string Caracteristicas { get; set; }
         public DateTime DataLancamento { get; set; }
+        public int CategoriaId { get; set; }
         public int MarcaId { get; set; }
         [ForeignKey("MarcaId")]
         public MarcaModel Marca { get; set; }
@@ -43,7 +44,7 @@ namespace Fiap.Api.AspNet3.Models
             Preco = preco;
             Caracteristicas = caracteristicas;
             DataLancamento = dataLancamento;
-            //CategoriaId = categoriaId;
+            CategoriaId = categoriaId;
             MarcaId = marcaId;
         }
     }
