@@ -1,4 +1,5 @@
-﻿using Fiap.Web.AspNet3.Models;
+﻿using Fiap.Web.AspNet3.Controllers.Filters;
+using Fiap.Web.AspNet3.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,6 +14,7 @@ namespace Fiap.Web.AspNet3.Controllers
             _logger = logger;
         }
 
+        [FiapLogFilter]
         public IActionResult Index()
         {
             return View();

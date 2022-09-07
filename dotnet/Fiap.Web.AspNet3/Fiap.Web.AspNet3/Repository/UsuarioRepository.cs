@@ -17,11 +17,19 @@ namespace Fiap.Web.AspNet3.Repository
             //var usuario = context.Usuarios.Where(u => u.UsuarioEmail == usuarioModel.UsuarioEmail && u.UsuarioSenha == usuarioModel.UsuarioSenha);
             //return (UsuarioModel)usuario;
 
-            return new UsuarioModel()
+            if(usuarioModel.UsuarioEmail.Equals("admin@fiap.com.br") && usuarioModel.UsuarioSenha.Equals("12345"))
             {
-                UsuarioNome = "Admin",
-                UsuarioId = 1
-            };
+                return new UsuarioModel()
+                {
+                    UsuarioNome = "Admin",
+                    UsuarioEmail = "admin@fiap.com.br",
+                    UsuarioId = 1
+                };
+            }
+            else
+            {
+                return null;
+            }           
         }
     }
 }

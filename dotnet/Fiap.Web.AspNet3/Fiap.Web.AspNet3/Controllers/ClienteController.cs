@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Fiap.Web.AspNet3.Controllers.Filters;
 using Fiap.Web.AspNet3.Data;
 using Fiap.Web.AspNet3.Models;
 using Fiap.Web.AspNet3.Repository;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Fiap.Web.AspNet3.Controllers
 {
+    [FiapAuthFilter]
     public class ClienteController : Controller
     {
         private readonly IClienteRepository clienteRepository;
@@ -27,6 +29,11 @@ namespace Fiap.Web.AspNet3.Controllers
         {
             //var listaClientes = clienteRepository.FindAll();
             //var listaClientes = clienteRepository.FindAllOrderByNomeAsc();
+            //var isLogged = String.IsNullOrEmpty(HttpContext.Session.GetString("email")) ? false : true;
+            //if (!isLogged)
+            //{
+            //    return RedirectToAction("Index", "Login");                      //código para checar autenticação
+            //}
             var vm = new ClientePesquisaViewModel();
             vm.Representantes = ComboRepresentantes();
             return View(vm);
